@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 5
   selector: 
-    matchlabels:
+    matchLabels:
        env: production
  #     - { key: env, operator: In, values:  [ production ] }
  #     - { key: region, operator: In, values:  [ IN ] }
@@ -14,8 +14,6 @@ spec:
       name: myweb-pod
       labels:
         env: production
-        dc: "2"
-        region: IN
     spec:
       containers:
       - name: myweb-con
